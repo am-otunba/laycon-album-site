@@ -4,13 +4,15 @@ import Image from "next/image"
 
 const products = [
   { id:1, name:"Black T-Shirt", price:"₦45,000", image:"/Black T-shirt.PNG", link: 'https://thelayconstore.bumpa.shop/products/ksmw-t-shirt/4499475?location=313151'},
-  { id:2, name:"White T-Shirt", price:"₦45,000", image:"/White T-shirt.jpg", link: 'https://thelayconstore.bumpa.shop/products/ksmw-t-shirt/4499475?location=313151'},
+  { id:2, name:"White T-Shirt", price:"₦45,000", image:"/White T-shirt.png", link: 'https://thelayconstore.bumpa.shop/products/ksmw-t-shirt/4499475?location=313151'},
   { id:3, name:"Black Hoodie", price:"₦55,000", image:"/Black Hoodie.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-hoodie/4503053?location=313151'},
-  { id:4, name:"Black crop-top", price:"30,000", image:"/Black Crop-top.jpeg", link:'https://thelayconstore.bumpa.shop/products/ksmw-crop-top/4501094?location=313151'},
-  { id:5, name:"Black crop-top", price:"₦30,000", image:"/White Crop-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-crop-top/4501094?location=313151'},
-  { id:6, name:"Double-Layered Sleeve Shirt", price:"₦55,000", image:"/Double Layered Sleeve Shirt.jpeg", link:'https://thelayconstore.bumpa.shop/products/ksmw-double-layered-sleeve-shirt/4503022?location=313151'},
-  { id:7, name:"Black Tank", price:"₦35,000", image:"/Black Tank-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-tank-top/4501176?location=313151'},
-  { id:8, name:"White Tank", price:"₦35,000", image:"/White Tank-top.jpg", link:'https://thelayconstore.bumpa.shop/products/ksmw-tank-top/4501176?location=313151'}
+  { id:4, name:"White Hoodie", price:"₦55,000", image:"/White Hoodie.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-hoodie/4503053?location=313151'},
+  { id:5, name:"Black crop-top", price:"30,000", image:"/Black Crop-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-crop-top/4501094?location=313151'},
+  { id:6, name:"White crop-top", price:"₦30,000", image:"/White Crop-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-crop-top/4501094?location=313151'},
+  { id:7, name:"Double-Layered Sleeve Shirt", price:"₦55,000", image:"/Double Layered Sleeve Shirt.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-double-layered-sleeve-shirt/4503022?location=313151'},
+  { id:8, name:"Black Tank", price:"₦35,000", image:"/Black Tank-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-tank-top/4501176?location=313151'},
+  { id:9, name:"White Tank", price:"₦35,000", image:"/White Tank-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-tank-top/4501176?location=313151'},
+  { id:10, name:"KSMW Vinyl", price:"₦35,000", image:"/Vinyl.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-vinyl/4503876?location=313151'}
 ]
 
 const Shop = () => {
