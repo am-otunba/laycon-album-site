@@ -91,9 +91,16 @@ return ( <section className="bg-[#F1CB5E40] py-12 px-4">
               e.stopPropagation();
               openSong(song.link);
             }}
-            className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-black text-white hover:scale-110 transition"
+            className="group shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-black hover:scale-110 transition"
           >
-            ▶
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="white"
+              className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5"
+            >
+              <polygon points="5,3 19,12 5,21" />
+            </svg>
           </button>
 
         </div>
