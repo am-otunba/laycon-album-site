@@ -101,7 +101,7 @@ const Preorder = () => {
 
     <button
       type="submit"
-      className="bg-[#000000] p-3 rounded-md text-[#ffffff] cursor-pointer text-sm sm:text-base md:text-lg"
+      className="bg-[#000000] p-4 rounded-md text-[#ffffff] cursor-pointer text-sm sm:text-base md:text-lg"
     >
       Get Invite
     </button>

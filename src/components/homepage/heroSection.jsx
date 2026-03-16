@@ -63,7 +63,7 @@ const HeroSection = () => {
             href="https://onerpm.link/laycon-kashimaawoo"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-block px-6 py-4 md:p-6 rounded-md cursor-pointer text-base md:text-lg bg-black text-white hover:scale-105 transition"
+            className="mt-6 inline-block px-6 py-5 md:p-6 rounded-md cursor-pointer text-base md:text-lg bg-black text-white hover:scale-105 transition"
           >
             Pre-Save Album
           </a>
