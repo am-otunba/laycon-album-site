@@ -1,5 +1,6 @@
 import React from 'react'
 import { localFont } from 'next/font/local'
+import { FaInstagram, FaSpotify, FaYoutube, FaXTwitter } from "react-icons/fa6";
 
 const simpleRoutine = localFont({
   src: '../../fonts/simple-routine.otf',
@@ -53,6 +54,45 @@ const Icon = () => {
               </button>
           </form>
 
+          <div className="flex gap-6 mb-10 text-2xl">
+
+          <a
+            href="https://www.instagram.com/itslaycon/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition"
+          >
+            <FaInstagram />
+          </a>
+
+          <a
+            href="https://x.com/itsLaycon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition"
+          >
+            <FaXTwitter />
+          </a>
+
+          <a
+            href="https://onerpm.link/laycon-kashimaawoo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition"
+          >
+            <FaSpotify />
+          </a>
+
+          <a
+            href="https://youtu.be/WTRyUxyU9GU?si=DTjeXiEm-69mpOQk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition"
+          >
+            <FaYoutube />
+          </a>
+
+        </div>
      </section> 
     </>
   )
