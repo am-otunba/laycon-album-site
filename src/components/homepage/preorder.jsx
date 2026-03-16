@@ -1,118 +1,152 @@
 "use client";
-import React from 'react'
-import Image from 'next/image'
-import { localFont } from 'next/font/local'
+import React from "react";
+import Image from "next/image";
+import { localFont } from "next/font/local";
 
 const simpleRoutine = localFont({
-  src: '../../fonts/simple-routine.otf',
-  weight: '400',
-  style: 'normal',
-})
+src: "../../fonts/simple-routine.otf",
+weight: "400",
+style: "normal",
+});
 
 const handlePreOrder = () => {
-  window.open("https://thelayconstore.bumpa.shop/products/ksmw-vinyl/4503876?location=313151", "_blank");
+window.open(
+"https://thelayconstore.bumpa.shop/products/ksmw-vinyl/4503876?location=313151",
+"_blank"
+);
 };
 
 const Preorder = () => {
-  return (
-    <>
-     <section className='w-full flex flex-col justify-center items-center bg-[#F1CB5E40] px-4 sm:px-6 lg:px-0'>
+return ( <section className="w-full flex flex-col items-center bg-[#F1CB5E40] px-4 sm:px-6 py-16">
 
-       {/* Vinyl Image */}
-       <div className='mt-35'>
-          <Image 
-            width={500}
-            height={500}
-            src={'/Vinyl.png'}
-            alt='Vinyl Mockup'
-            className='w-[80vw] max-w-[500px] h-auto'
-          />
-       </div>   
+  {/* VINYL SECTION */}
+  <div className="flex flex-col items-center max-w-4xl w-full">
 
-       {/* Pre-order button */}
-       <div className='flex flex-col items-center mt-5'>
-          <p className='text-center text-sm sm:text-base md:text-lg'>A physical piece of the story. Limited copies available.</p>
-          <button 
-          onClick={handlePreOrder}
-          className='bg-[#000000] p-3 rounded-md text-[#ffffff] mt-5 cursor-pointer text-sm sm:text-base md:text-lg'>
-            Pre-Order Vinyl
-          </button>
-       </div>
-
-       {/* Listening Experience Section */}
-<div className="flex flex-col items-center justify-center w-full mt-35">
-
-  <div className="relative w-full max-w-[500px]">
-
-    {/* Background Image */}
     <Image
       width={500}
       height={500}
-      src="/listeningParty.png"
-      alt="listeningParty"
-      className="object-cover w-full h-auto rounded-md"
+      src="/Vinyl.png"
+      alt="Vinyl Mockup"
+      className="w-[85vw] max-w-[420px] h-auto"
     />
 
-    {/* Overlay Text */}
-    <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-2">
-      <p className="text-[24px] sm:text-[30px] md:text-[36px] text-center text-[#ffffff] font-bold">
-        <span className={`${simpleRoutine.className}`}>Listening</span> Experience
-      </p>
-      <p className="mt-2 sm:mt-3 text-center text-sm sm:text-base md:text-lg text-[#ffffff]">
-        A room full of people. A world inside your head.
-      </p>
-    </div>
+    <p className="text-center mt-6 text-sm sm:text-base md:text-lg max-w-md">
+      A physical piece of the story. Limited copies available.
+    </p>
 
-    {/* Sponsors Logo */}
-    <div className="absolute bottom-7 left-5 right-0 flex justify-center z-10">
-      <Image
-        width={400}
-        height={400}
-        src="/sponsors.png"
-        alt="Sponsors"
-        className="w-[120px] sm:w-[150px] h-auto"
-      />
-    </div>
-
-    {/* Bottom Text */}
-    <div className="absolute bottom-2 left-0 right-0 flex justify-center z-10 px-2">
-      <p className="text-[#ffffff] text-center text-sm sm:text-base md:text-lg">
-        More details coming soon!
-      </p>
-    </div>
-
+    <button
+      onClick={handlePreOrder}
+      className="mt-5 bg-black text-white px-6 py-3 rounded-md text-sm sm:text-base md:text-lg hover:scale-105 transition"
+    >
+      Pre-Order Vinyl
+    </button>
 
   </div>
 
-  {/* Get Invite Form */}
-  <form
-    action="https://formspree.io/f/xreyanyj"
-    method="POST"
-    className="flex flex-col items-center mt-5 gap-3"
-  >
 
-    <input
-      type="email"
-      name="email"
-      required
-      placeholder="Enter your email for the invite"
-      className="border-b-2 p-2 border-black text-center outline-none bg-transparent pb-2 text-sm sm:text-base md:text-md w-125 focus:border-[#F1CB5E] transition"
-    />
+  {/* LISTENING EXPERIENCE */}
+  <div className="flex flex-col items-center w-full mt-20">
 
-    <button
-      type="submit"
-      className="bg-[#000000] p-4 rounded-md text-[#ffffff] cursor-pointer text-sm sm:text-base md:text-lg"
+    <div className="relative w-full max-w-[520px] rounded-lg overflow-hidden shadow-lg">
+
+      {/* Background Image */}
+      <Image
+        width={520}
+        height={520}
+        src="/listeningParty.png"
+        alt="Listening Party"
+        className="w-full h-auto object-cover"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/20"></div>
+
+      {/* Text */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
+
+        <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+          <span className={simpleRoutine.className}>
+            Listening Experience
+          </span>
+        </p>
+
+        <p className="mt-3 text-white text-sm sm:text-base md:text-lg max-w-xs">
+          A room full of people. A world inside your head.
+        </p>
+
+      </div>
+
+      {/* Sponsors */}
+      <div className="absolute bottom-6 left-0 right-0 flex justify-center items-center gap-6 z-10">
+
+        <a
+          href="https://www.port.ac.uk/study/international-students/how-to-apply"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/portsmouth 1.svg"
+            alt="University of Portsmouth"
+            width={120}
+            height={60}
+            className="w-[55px] sm:w-[65px] hover:scale-105 transition"
+          />
+        </a>
+
+        <a
+          href="https://theunforsaken.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/Unforsaken.png"
+            alt="The Unforsaken House of Hephzibah"
+            width={120}
+            height={60}
+            className="w-[95px] sm:w-[110px] hover:scale-105 transition"
+          />
+        </a>
+
+      </div>
+
+      {/* Bottom Text */}
+      <div className="absolute bottom-3 left-0 right-0 flex justify-center z-10">
+        <p className="text-white text-xs sm:text-sm md:text-base text-center">
+          More details coming soon!
+        </p>
+      </div>
+
+    </div>
+
+
+    {/* INVITE FORM */}
+    <form
+      action="https://formspree.io/f/xreyanyj"
+      method="POST"
+      className="flex flex-col items-center mt-8 w-full max-w-md"
     >
-      Get Invite
-    </button>
 
-  </form>
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Enter your email for the invite"
+        className="w-full border-b-2 border-black bg-transparent text-center outline-none pb-2 text-sm sm:text-base focus:border-[#F1CB5E] transition"
+      />
 
-</div>
+      <button
+        type="submit"
+        className="mt-5 bg-black text-white px-6 py-3 rounded-md text-sm sm:text-base md:text-lg hover:scale-105 transition"
+      >
+        Get Invite
+      </button>
 
-     </section> 
-    </>
-  )
-}
+    </form>
 
-export default Preorder
+  </div>
+</section>
+
+);
+};
+
+export default Preorder;

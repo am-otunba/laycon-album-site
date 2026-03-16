@@ -41,57 +41,46 @@ export default function Countdown() {
   }, []);
 
   return (
-    <div className="relative flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6 bg-[#F1CB5E40] px-4 py-6">
+  <div className="flex justify-center items-center bg-[#F1CB5E40] px-4 py-10">
 
-      {/* center connector line */}
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
 
       <TimeBox value={timeLeft.days} label="DAYS" />
-      {/* <Dot /> */}
       <TimeBox value={timeLeft.hours} label="HOURS" />
-      {/* <Dot /> */}
       <TimeBox value={timeLeft.minutes} label="MINUTES" />
-      {/* <Dot /> */}
       <TimeBox value={timeLeft.seconds} label="SECONDS" />
 
     </div>
-  );
+
+  </div>
+);
 }
 
 
 
 function TimeBox({ value, label }) {
   return (
-    <div className="relative flex flex-col items-center mt-10">
+    <div className="flex flex-col items-center">
 
-      {/* timeline line */}
-      <div className="absolute top-[40px] left-0 right-0 h-[2px] bg-gray-300 z-20"></div>
-
-      {/* circle markers */}
-      <div className="absolute top-[36px] left-0 z-30">
-        <CircleMarker />
-      </div>
-
-      <div className="absolute top-[36px] right-0 z-30">
-        <CircleMarker />
-      </div>
-
-      {/* black box */}
+      {/* number box */}
       <div
-        className="bg-black text-white
+        className="
+        bg-black text-white
         w-14 h-14
         sm:w-16 sm:h-16
         md:w-20 md:h-20
-        lg:w-24 lg:h-20
-        rounded-xl flex items-center justify-center
-        text-2xl sm:text-3xl md:text-4xl lg:text-5xl
-        font-light shadow-lg
-        relative z-10"
+        rounded-xl
+        flex items-center justify-center
+        text-2xl sm:text-3xl md:text-4xl
+        font-light
+        shadow-lg
+        "
       >
         {String(value).padStart(2, "0")}
       </div>
 
       {/* label */}
-      <span className="text-[10px] sm:text-xs tracking-widest mt-3 text-gray-700">
+      <span className="text-[11px] sm:text-xs tracking-widest mt-3 text-gray-700">
         {label}
       </span>
 
