@@ -11,17 +11,21 @@ const simpleRoutine = localFont({
 export default function Playlist() {
 
   const songs = [
-    { title: "1. PRELUDE (with Agbalnaki)" },
+    { title: "1. PRELUDE (with Agbalnaki)", link: 'https://onerpm.link/laycon-kashimaawoo' },
     { title: "2. REASON", link:'https://onerpm.link/laycon-reason' },
-    { title: "3. OYOYO" },
-    { title: "4. NIGHT AND DAY (with Joeboy)" },
-    { title: "5. FULL CIRCLE" },
-    { title: "6. LIKE FATHER LIKE SON" },
-    { title: "7. HIS AND HERS (with Fimi)" },
-    { title: "8. ACCEPTANCE" },
+    { title: "3. OYOYO", link: 'https://onerpm.link/laycon-kashimaawoo' },
+    { title: "4. NIGHT AND DAY (with Joeboy)", link: 'https://onerpm.link/laycon-kashimaawoo' },
+    { title: "5. FULL CIRCLE", link: 'https://onerpm.link/laycon-kashimaawoo' },
+    { title: "6. LIKE FATHER LIKE SON", link: 'https://onerpm.link/laycon-kashimaawoo' },
+    { title: "7. HIS AND HERS (with Fimi)", link: 'https://onerpm.link/laycon-kashimaawoo' },
+    { title: "8. ACCEPTANCE", link: 'https://onerpm.link/laycon-kashimaawoo' },
     { title: "9. EVERYDAY ANTHEM", link:'https://onerpm.link/laycon-everyday-anthem' },
-    { title: "10. ASEE" },
+    { title: "10. ASEE", link: 'https://onerpm.link/laycon-kashimaawoo' },
   ];
+
+  const openSong = (link) => {
+    window.open(link, "_blank");
+  };
 
   return (
     <>
@@ -33,6 +37,7 @@ export default function Playlist() {
         </div>
 
         <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[60%] mx-auto border rounded-md p-2">
+          
           <div className="flex flex-col sm:flex-row p-3 mb-6 gap-y-4 sm:gap-x-8 items-center sm:items-start">
             <Image
               src="/albumArt.jpg"
@@ -42,7 +47,9 @@ export default function Playlist() {
               className="rounded-xl shadow-lg"
             />
             <div className="text-center sm:text-left">
-              <h3 className={`${simpleRoutine.className} text-xl sm:text-2xl md:text-3xl font-bold`}>Káshìmáawòó</h3>
+              <h3 className={`${simpleRoutine.className} text-xl sm:text-2xl md:text-3xl font-bold`}>
+                Káshìmáawòó
+              </h3>
               <p className="font-bold text-lg sm:text-xl md:text-2xl">LAYCON</p>
             </div>
           </div>
@@ -50,21 +57,26 @@ export default function Playlist() {
           {songs.map((song, index) => (
             <div
               key={index}
-              onClick={() => song.link && window.open(song.link, "_blank")}
-              className={`flex flex-col sm:flex-row items-center justify-between border-b py-4 px-2 transition ${song.link ? "hover:bg-[#F1CB5E49] cursor-pointer" : ""}`}
+              onClick={() => openSong(song.link)}
+              className="flex flex-col sm:flex-row items-center justify-between border-b py-4 px-2 transition hover:bg-[#F1CB5E49] cursor-pointer"
             >
+              
               {/* Song Title */}
               <span className={`${simpleRoutine.className} text-lg sm:text-xl md:text-2xl lg:text-[28px] font-medium text-gray-800 mb-2 sm:mb-0`}>
                 {song.title}
               </span>
 
               {/* Play Button */}
-              <button 
-              disabled={!song.link}
-              className={`w-10 h-10 flex items-center justify-center rounded-full transition
-              ${song.link ? "bg-black text-white hover:scale-110" : "bg-gray-300 text-gray-500 cursor-not-allowed"}`}>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  openSong(song.link);
+                }}
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white hover:scale-110 transition"
+              >
                 ▶
               </button>
+
             </div>
           ))}
 

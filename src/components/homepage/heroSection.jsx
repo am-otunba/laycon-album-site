@@ -29,7 +29,7 @@ const HeroSection = () => {
           </a>
 
           <a href="#listening" className="cursor-pointer hover:text-black hover:scale-110 transition-transform duration-200">
-            Listening Party
+            Listening Experience
           </a>
 
           <a href="#merch" className="cursor-pointer hover:text-black hover:scale-110 transition-transform duration-200">

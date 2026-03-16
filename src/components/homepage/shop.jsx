@@ -12,7 +12,7 @@ const products = [
   { id:7, name:"Double-Layered Sleeve Shirt", price:"₦55,000", image:"/Double Layered Sleeve Shirt.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-double-layered-sleeve-shirt/4503022?location=313151'},
   { id:8, name:"Black Tank", price:"₦35,000", image:"/Black Tank-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-tank-top/4501176?location=313151'},
   { id:9, name:"White Tank", price:"₦35,000", image:"/White Tank-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-tank-top/4501176?location=313151'},
-  { id:10, name:"KSMW Kampala (5 Yards)", price:"₦20,000", image:"/Kampala.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-kampala/4504223?location=313151'}
+  { id:10, name:"The Listening Experience Kampala (5 Yards)", price:"₦20,000", image:"/Kampala.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-kampala/4504223?location=313151'}
 ]
 
 const Shop = () => {
