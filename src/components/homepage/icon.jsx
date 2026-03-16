@@ -1,9 +1,10 @@
 import React from 'react'
-import { Allura } from 'next/font/google'
+import { localFont } from 'next/font/local'
 
-const allura = Allura ({
-     subsets: ["latin"],
-     weight: ['400'],
+const simpleRoutine = localFont({
+  src: '../../fonts/simple-routine.otf',
+  weight: '400',
+  style: 'normal',
 })
 
 const Icon = () => {
@@ -14,7 +15,7 @@ const Icon = () => {
           {/* Heading */}
           <div className='font-bold mt-10 text-center'>
                <h3 className='text-2xl sm:text-3xl md:text-4xl lg:text-[36px]'>
-                 <span className={`${allura.className}`}>Become an</span> ICON
+                 <span className={`${simpleRoutine.className}`}>Become an</span> ICON
                </h3>
                <p className='mt-2 text-sm sm:text-base md:text-lg'>For those who feel it deeply.</p>
           </div>     

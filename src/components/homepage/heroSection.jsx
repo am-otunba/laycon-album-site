@@ -21,10 +21,20 @@ const HeroSection = () => {
         {/* NAVBAR */}
         <nav className="absolute top-0 left-0 w-full z-20 flex justify-center items-center px-6 md:px-12 py-6 text-sm md:text-[18px] font-bold gap-4 md:gap-8">
 
-          <p className="cursor-pointer hover:text-[#000000]">Album</p>
-          <p className="cursor-pointer hover:text-[#000000]">Tracklist</p>
-          <p className="cursor-pointer hover:text-[#000000]">Listening Party</p>
-          <p className="cursor-pointer hover:text-[#000000]">Merch</p>
+          <a href="#album" className="cursor-pointer hover:text-black hover:scale-110 transition-transform duration-200">
+               Album
+          </a>
+          <a href="#tracklist" className="cursor-pointer hover:text-black hover:scale-110 transition-transform duration-200">
+            Tracklist
+          </a>
+
+          <a href="#listening" className="cursor-pointer hover:text-black hover:scale-110 transition-transform duration-200">
+            Listening Party
+          </a>
+
+          <a href="#merch" className="cursor-pointer hover:text-black hover:scale-110 transition-transform duration-200">
+            Merch
+          </a>
 
         </nav>
 
@@ -49,9 +59,14 @@ const HeroSection = () => {
             <span className={simpleRoutine.className}>Káshimáawòó</span>
           </h1>
 
-          <button className="mt-6 px-6 py-4 md:p-6 rounded-md cursor-pointer text-base md:text-lg bg-[#000000] text-white hover:scale-105 transition">
+          <a
+            href="https://onerpm.link/laycon-kashimaawoo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-block px-6 py-4 md:p-6 rounded-md cursor-pointer text-base md:text-lg bg-black text-white hover:scale-105 transition"
+          >
             Pre-Save Album
-          </button>
+          </a>
 
         </div>
 
@@ -65,13 +80,25 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[#9ecfeb40]"></div>
 
       <div className='relative'>
-      <Album />
-      <Countdown />
-      <Playlist />
-      <Preorder />
-      <Shop />
-      <Icon />
-      </div>
+        <div id="album">
+          <Album />
+        </div>
+          <Countdown />
+        <div id="tracklist">
+          <Playlist />
+        </div>
+
+        <div id="listening">
+          <Preorder />
+        </div>
+
+        <div id="merch">
+          <Shop />
+        </div>
+
+        
+        <Icon />
+        </div>
       </div>
     </>
   )

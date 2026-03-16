@@ -12,7 +12,7 @@ const products = [
   { id:7, name:"Double-Layered Sleeve Shirt", price:"₦55,000", image:"/Double Layered Sleeve Shirt.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-double-layered-sleeve-shirt/4503022?location=313151'},
   { id:8, name:"Black Tank", price:"₦35,000", image:"/Black Tank-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-tank-top/4501176?location=313151'},
   { id:9, name:"White Tank", price:"₦35,000", image:"/White Tank-top.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-tank-top/4501176?location=313151'},
-  { id:10, name:"KSMW Vinyl", price:"₦35,000", image:"/Vinyl.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-vinyl/4503876?location=313151'}
+  { id:10, name:"KSMW Kampala (5 Yards)", price:"₦20,000", image:"/Kampala.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-kampala/4504223?location=313151'}
 ]
 
 const Shop = () => {
@@ -21,7 +21,7 @@ const Shop = () => {
       <section className="bg-[#F1CB5E40] py-10 px-4 sm:px-6 lg:px-20">
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
 
           {products.map((product) => (
             <div key={product.id} 
