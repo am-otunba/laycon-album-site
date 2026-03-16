@@ -3,7 +3,7 @@
 import Image from "next/image"
 
 const products = [
-  { id:1, name:"Black T-Shirt", price:"₦45,000", image:"/Black T-shirt.PNG", link: 'https://thelayconstore.bumpa.shop/products/ksmw-t-shirt/4499475?location=313151'},
+  { id:1, name:"Black T-Shirt", price:"₦45,000", image:"/Black T-shirt.png", link: 'https://thelayconstore.bumpa.shop/products/ksmw-t-shirt/4499475?location=313151'},
   { id:2, name:"White T-Shirt", price:"₦45,000", image:"/White T-shirt.png", link: 'https://thelayconstore.bumpa.shop/products/ksmw-t-shirt/4499475?location=313151'},
   { id:3, name:"Black Hoodie", price:"₦55,000", image:"/Black Hoodie.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-hoodie/4503053?location=313151'},
   { id:4, name:"White Hoodie", price:"₦55,000", image:"/White Hoodie.png", link:'https://thelayconstore.bumpa.shop/products/ksmw-hoodie/4503053?location=313151'},
