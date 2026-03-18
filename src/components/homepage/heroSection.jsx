@@ -32,7 +32,7 @@ return (
           href="#album"
           className="cursor-pointer hover:text-black hover:scale-110 transition"
         >
-          Album
+          Mixtape
         </a>
 
         <a
@@ -73,7 +73,7 @@ return (
       <div className="md:hidden absolute top-20 left-0 w-full backdrop-blur-md bg-white/80 flex flex-col items-center gap-6 py-6 shadow-lg z-20 text-lg font-semibold">
 
         <a href="#album" onClick={() => setMenuOpen(false)}>
-          Album
+          Mixtape
         </a>
 
         <a href="#tracklist" onClick={() => setMenuOpen(false)}>
@@ -118,7 +118,7 @@ return (
         rel="noopener noreferrer"
         className="mt-6 inline-block px-6 py-5 md:p-6 rounded-md cursor-pointer text-base md:text-lg bg-black text-white hover:scale-105 transition"
       >
-        Pre-Save Album
+        Pre-Save Mixtape
       </a>
 
     </div>
