@@ -118,7 +118,7 @@ return (
         rel="noopener noreferrer"
         className="mt-6 inline-block px-6 py-5 md:p-6 rounded-md cursor-pointer text-base md:text-lg bg-black text-white hover:scale-105 transition"
       >
-        Pre-Save Mixtape
+        Listen Now
       </a>
 
     </div>
@@ -138,7 +138,7 @@ return (
         <Album />
       </div>
 
-      <Countdown />
+      {/* <Countdown /> */}
 
       <div id="tracklist">
         <Playlist />
