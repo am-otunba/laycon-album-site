@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kashimawa | Pre-save",
+  title: "Kaashimawoo | Pre-save",
   description: "",
 };
 
